@@ -54,7 +54,7 @@ def cursor(thrust, count):
         # print isData()
 
         if isData():
-            print 'Press ', count
+            print('Press ', count)
             count = 0
             c = sys.stdin.read(3)
             # print str(c)
@@ -87,14 +87,14 @@ count = 0
 thrust_loc = 0
 
 
-print position_x
-print position_x.size
+print(position_x)
+print(position_x.size)
 
 position_x_matrix = calc_relative_positions(position_x)
 position_y_matrix = calc_relative_positions(position_y)
 
-print position_x_matrix
-print position_x_matrix.shape[0]
+print(position_x_matrix)
+print(position_x_matrix.shape[0])
 
 #plt.plot(position_x, position_y, 'ro')
 #plt.axis([-6, 6, -6, 6])
@@ -164,5 +164,5 @@ ani = FuncAnimation(fig, update, frames=100, init_func=init, blit=True)
 plt.show()
 
 
-print position_x_matrix
-print position_y_matrix
+print(position_x_matrix)
+print(position_y_matrix)
